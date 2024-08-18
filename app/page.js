@@ -3,13 +3,26 @@
 import Header from "@/app/_components/Header";
 import Skills from "@/app/_components/Skills";
 import Projects from "@/app/_components/Projects";
+import Main from "@/app/_components/Main";
+import Footer from "@/app/_components/Footer";
+import Contact from "@/app/_components/Contact";
+import MainNav from "@/app/_components/MainNav";
+import Hero from "@/app/_components/Hero";
 
 export default function Home() {
   return (
-    <div className='max-w-[375px] mx-auto px-4 tablet:max-w-[768px] desktop:max-w-[1142px]'>
-      <Header />
-      <Skills />
-      <Projects />
-    </div>
+    <>
+      <Header>
+        <MainNav />
+        <Hero />
+      </Header>
+      <Main>
+        <Skills />
+        <Projects />
+      </Main>
+      <Footer>
+        <Contact />
+      </Footer>
+    </>
   );
 }

@@ -5,18 +5,16 @@ import Link from "next/link";
 
 function Project({ project }) {
   const { title, technologies, thumbnail } = project;
-  const { small: thumbSmall, large: thumbLarge } = thumbnail;
+  const { large: thumbLarge } = thumbnail;
   return (
     <li className='flex flex-col mt-10 tablet:w-[calc(50%-11px)] tablet:mt-[60px] tablet:odd:mr-[22px]'>
-      <Link
-        href='/'
-        className='block relative w-full h-[253px]  desktop:h-[400px] project-thumbnail'
-      >
+      <div className='block relative w-full h-[253px]  desktop:h-[400px] project-thumbnail'>
         <Image
           src={thumbLarge}
           alt={`${title} thumbnail`}
           fill
           className='object-cover'
+          sizes='(max-width: 768px) 346px, 544px'
         />
         <div className=' absolute w-full h-full bg-[#000]/50 hidden desktop:flex desktop:flex-col desktop:items-center desktop:justify-center desktop:gap-12 desktop:opacity-0 project-thumbnail-overlay desktop:transition-opacity'>
           <Link href='#view' className='btn '>
@@ -26,7 +24,7 @@ function Project({ project }) {
             View Code
           </Link>
         </div>
-      </Link>
+      </div>
       <h3 className='mt-5 font-bold uppercase text-m'>
         <Link
           href='/'

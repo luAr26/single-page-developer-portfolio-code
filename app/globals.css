@@ -23,4 +23,8 @@
   .project-thumbnail:hover .project-thumbnail-overlay {
     @apply opacity-100;
   }
+
+  .container {
+    @apply max-w-[375px] mx-auto px-4 tablet:max-w-[768px] desktop:max-w-[1142px];
+  }
 }
