@@ -70,10 +70,10 @@ function Header() {
             Based in the UK, I&apos;m a front-end developer passionate about
             building accessible web apps that users love.
           </p>
-          {/* TODO: Add button hover state */}
-          <button className='uppercase leading-[1.625] tracking-[2.29px] font-bold border-b-2 border-secondary py-2 px-1'>
+          {/* TODO: Add link hover state */}
+          <Link className='btn' href='/'>
             Contact me
-          </button>
+          </Link>
         </div>
       </div>
 
