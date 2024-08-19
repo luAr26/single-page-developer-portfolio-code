@@ -26,6 +26,7 @@ module.exports = {
       l: ["3rem", { lineHeight: "1.1666667", letterSpacing: "-1.5px" }],
       m: ["1.5rem", { lineHeight: "1.3333333" }],
       body: ["1.125rem", { lineHeight: "1.5555556" }],
+      input: ["1rem", { lineHeight: "1.625", letterSpacing: "-0.22px" }],
     },
     extend: {},
   },

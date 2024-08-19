@@ -30,7 +30,7 @@ function Hero() {
           building accessible web apps that users love.
         </p>
         {/* TODO: Add link hover state */}
-        <Link className='btn' href='/'>
+        <Link className='btn' href='#contact'>
           Contact me
         </Link>
       </div>
