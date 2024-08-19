@@ -11,25 +11,25 @@ function SocialLinks() {
   return (
     <ul className='flex justify-center items-center gap-[1.625rem]'>
       <li>
-        <Link href='/'>
+        <Link href='/' className='social-link'>
           <span className='sr-only'>Github</span>
           <GithubIcon />
         </Link>
       </li>
       <li>
-        <Link href='/'>
+        <Link href='/' className='social-link'>
           <span className='sr-only'>FrontEnd Mentor</span>
           <FrontEndMentorIcon />
         </Link>
       </li>
       <li>
-        <Link href='/'>
+        <Link href='/' className='social-link'>
           <span className='sr-only'>LinkedIn</span>
           <LinkedinIcon />
         </Link>
       </li>
       <li>
-        <Link href='/'>
+        <Link href='/' className='social-link'>
           <span className='sr-only'>Twitter</span>
           <TwitterIcon />
         </Link>
