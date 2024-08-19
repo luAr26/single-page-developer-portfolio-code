@@ -13,25 +13,25 @@ function SocialLinks() {
       <li>
         <Link href='/' className='social-link'>
           <span className='sr-only'>Github</span>
-          <GithubIcon />
+          <GithubIcon className='w-[19.69px] tablet:w-[24.61px] social-icon' />
         </Link>
       </li>
       <li>
         <Link href='/' className='social-link'>
           <span className='sr-only'>FrontEnd Mentor</span>
-          <FrontEndMentorIcon />
+          <FrontEndMentorIcon className='w-[19.68px] tablet:w-[24.6px] social-icon' />
         </Link>
       </li>
       <li>
         <Link href='/' className='social-link'>
           <span className='sr-only'>LinkedIn</span>
-          <LinkedinIcon />
+          <LinkedinIcon className='w-[19.2px] tablet:w-[24px] social-icon' />
         </Link>
       </li>
       <li>
         <Link href='/' className='social-link'>
           <span className='sr-only'>Twitter</span>
-          <TwitterIcon />
+          <TwitterIcon className='w-[18.62px] tablet:w-[23.28px] social-icon' />
         </Link>
       </li>
     </ul>
