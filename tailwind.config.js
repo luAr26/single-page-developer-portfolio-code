@@ -16,6 +16,7 @@ module.exports = {
       ["dark-gray"]: "var(--color-dark-gray)",
       ["light-gray"]: "var(--color-light-gray)",
       white: "var(--color-white)",
+      transparent: "transparent",
     },
     screens: {
       tablet: "768px",

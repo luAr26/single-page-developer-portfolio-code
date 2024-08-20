@@ -32,7 +32,7 @@
     @apply text-[2.5rem] font-bold leading-[1] -tracking-[1.14px] tablet:text-[4.5rem] tablet:-tracking-[2.05px] desktop:text-xl;
   }
   .form-input {
-    @apply block w-full border-b border-white bg-dark-gray  placeholder:uppercase p-[8px_23px] text-input focus:outline-none focus:border-secondary;
+    @apply block w-full border-b border-white bg-transparent placeholder:uppercase p-[8px_23px] text-input focus:outline-none focus:border-secondary;
   }
 
   .logo {
@@ -41,5 +41,71 @@
 
   .social-icon {
     @apply transition-all fill-white hover:fill-secondary;
+  }
+}
+
+#main-header {
+  background:
+    url("/images/pattern-rings.svg") -342px 124px no-repeat,
+    url("/images/pattern-circle.svg") right -65px top 254px no-repeat;
+}
+
+#main {
+  background: url("/images/pattern-rings.svg") right -342px top 540px no-repeat;
+}
+
+#contact {
+  background-color: var(--color-dark-gray);
+  background-image: url("/images/pattern-rings.svg");
+  background-position: left -342px bottom 269px;
+  background-repeat: no-repeat;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  #main-header {
+    background:
+      url("/images/pattern-rings.svg") -265px 86px no-repeat,
+      none;
+  }
+
+  #hero-container {
+    background: url("/images/pattern-circle.svg") right -65px bottom 53px no-repeat;
+  }
+
+  #main {
+    background: url("/images/pattern-rings.svg") right -330px top 387px no-repeat;
+  }
+
+  #contact {
+    background-color: var(--color-dark-gray);
+    background-image: url("/images/pattern-rings.svg");
+    background-position: left -362px bottom 130px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+  #main-header {
+    background:
+      url("/images/pattern-rings.svg") -100px 133px no-repeat,
+      none;
+  }
+
+  #hero-container {
+    background: url("/images/pattern-circle.svg") right 380px bottom 174px
+      no-repeat;
+  }
+
+  #main {
+    background: url("/images/pattern-rings.svg") right -243px top 252px no-repeat;
+  }
+
+  #contact {
+    background-color: var(--color-dark-gray);
+    background-image: url("/images/pattern-rings.svg");
+    background-position: left -206px bottom 219px;
+    background-repeat: no-repeat;
   }
 }

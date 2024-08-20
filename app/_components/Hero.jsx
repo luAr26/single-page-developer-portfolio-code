@@ -9,14 +9,17 @@ import profileImageDesktop from "@/public/images/image-profile-desktop.webp";
 
 function Hero() {
   return (
-    <div className='flex flex-col items-center gap-6 pb-20 tablet:pb-[60px] desktop:pb-[238px]'>
+    <div
+      className='flex flex-col items-center gap-6 pb-20 tablet:pb-[60px] desktop:pb-[238px]'
+      id='hero-container'
+    >
       <div className='relative h-[383px] w-[174px] tablet:hidden'>
         <Image src={profileImageMobile} alt='Profile Image' priority />
       </div>
-      <div className='h-[600px] w-[322px] hidden tablet:block tablet:absolute tablet:right-0 desktop:hidden'>
+      <div className='h-[600px] w-[322px] hidden tablet:block tablet:absolute tablet:right-4 desktop:hidden tablet:-z-10'>
         <Image src={profileImageTablet} alt='Profile Image' priority />
       </div>
-      <div className='h-[720px] w-[445px] hidden desktop:block desktop:absolute desktop:right-0'>
+      <div className='h-[720px] w-[445px] hidden desktop:block desktop:absolute desktop:right-4 desktop:-z-10'>
         <Image src={profileImageDesktop} alt='Profile Image' priority />
       </div>
       <div className='flex flex-col items-center gap-6 tablet:items-start tablet:w-full tablet:relative tablet:mt-[148px] desktop:mt-[178px]'>
