@@ -4,7 +4,10 @@ import { Space_Grotesk } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weights: [400, 700] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weights: [400, 500, 700],
+});
 
 export const metadata = {
   title: "Single-page developer portfolio",

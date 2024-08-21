@@ -12,6 +12,7 @@
     --color-dark-gray: #242424;
     --color-light-gray: #d9d9d9;
     --color-white: #fff;
+    --color-danger: #ff6f5b;
   }
 }
 
@@ -35,6 +36,10 @@
     @apply block w-full border-b border-white bg-transparent placeholder:uppercase p-[8px_23px] text-input focus:outline-none focus:border-secondary;
   }
 
+  .error-message {
+    @apply text-danger text-[0.75rem] font-medium -tracking-[0.17px] leading-[1] mt-[5px] text-right;
+  }
+
   .logo {
     @apply font-bold text-m tablet:text-[2rem] tablet:leading-[1] -tracking-[0.33px] tablet:-tracking-[0.44px];
   }
@@ -42,6 +47,15 @@
   .social-icon {
     @apply transition-all fill-white hover:fill-secondary;
   }
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.form-input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  caret-color: #ffffff;
 }
 
 #main-header {
