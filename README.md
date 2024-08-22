@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
+- Solution URL: [Github Repo](https://github.com/luAr26/single-page-developer-portfolio-code)
 - Live Site URL: [Live demo](https://main--elaborate-cupcake-f41a2b.netlify.app/)
 
 ## My process
