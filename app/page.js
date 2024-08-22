@@ -8,6 +8,7 @@ import Footer from "@/app/_components/Footer";
 import Contact from "@/app/_components/Contact";
 import MainNav from "@/app/_components/MainNav";
 import Hero from "@/app/_components/Hero";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Footer>
         <Contact />
       </Footer>
+      <Toaster position='top-right' />
     </>
   );
 }

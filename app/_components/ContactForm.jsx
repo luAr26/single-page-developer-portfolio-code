@@ -3,11 +3,9 @@
 import { useFormik } from "formik";
 import { twMerge } from "tailwind-merge";
 import * as Yup from "yup";
-import { useRouter, useSearchParams } from "next/navigation";
+import toast from "react-hot-toast";
 
 function ContactForm() {
-  const params = useSearchParams();
-  const router = useRouter();
   // Formik logic
   const formik = useFormik({
     initialValues: {
@@ -31,14 +29,12 @@ function ContactForm() {
     }),
     // Form submission
     onSubmit: (values) => {
-      const newSearchParams = new URLSearchParams(params);
-      newSearchParams.set("name", values.name);
-      const route = `success?${newSearchParams.toString()}`;
-      router.push(route);
+      toast.success(
+        `Thank you, ${values.name}! Your message was sent successfully!`
+      );
+      formik.resetForm();
     },
   });
-
-  console.log(formik.errors);
 
   return (
     <form onSubmit={formik.handleSubmit} className='w-full desktop:w-[445px]'>
